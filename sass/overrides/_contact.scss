@@ -1,0 +1,64 @@
+$circle-line: #ffc800;
+$metropolitan: #813859;
+$hammersmith: #c8a0a7;
+$victoria: #009fe3;
+$overground: #f39b1e;
+
+#infection-immunity-contact {
+	.nearesttubestations {
+		margin-top:-3rem;
+		margin-bottom: -9rem;
+		ul {
+			list-style: none;
+			margin-left: 0;
+			li {
+				line-height: 0.75;
+				&:before {
+					content: ' \25A0';
+					font-size: 3.5rem;
+					margin-right:5px;
+				}
+			}
+		}
+	}
+	.threecolumns__column1 {
+		ul li {
+			&:first-of-type:before {
+				color: $circle-line;
+			}
+			&:nth-of-type(2):before {
+				color: $metropolitan
+			}
+			&:nth-of-type(3):before {
+				color: $hammersmith;
+			}
+		}
+	}
+	.threecolumns__column2, .threecolumns__column3 {
+		ul li {
+			&:first-of-type:before {
+				color: $victoria;
+			}
+		}
+	}
+	.threecolumns__column3 {
+		ul li {
+			&:nth-of-type(3):before {
+				color: $overground;
+			}
+		}
+	}
+	.threecolumns {
+		p {
+			margin-bottom: 0;
+		}
+	}
+	.middle-split__column2 {
+		p:first-of-type {
+			margin-top: -0.5em;
+		}
+		p:nth-of-type(3) {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+.layout-horizontal--nav-1col .site-content__main {
+	max-width: none;
+}
+@include gs-media(t, min) { //min width 768px - "tablet"
+	.social-links {
+		margin-top: -68px;
+		padding-bottom: 68px;
+	}
+}
+@include gs-media (m) {
+	.social-links {
+		padding-bottom:2em;
+	}
+}
+.social-links img.float-right {
+	width: 40px !important;
+	height: 40px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.rule {
+	margin-left: -35px;
+	padding-left: 35px;
+	margin-right: -35px;
+	padding-right: 35px;
+	border-color: black;
+}
+.heading {
+	font-weight:500;
+}
+.photograph--show .photograph__description {
+	display: block;
+	left: 35px;
+	background: none;
+	top: 30%;
+	font-style: inherit;
+	font-size: 5vw;
+	width:49%;
+	font-weight: 500;
+	line-height: 1;
+}
+#infection-immunity .photograph--show .photograph__description {
+	font-size: 6vw;
+	width:70%;
+}
+//We don't have a default media query for massive screens, so this is hand coded
+@media (min-width: 1600px) {
+	#infection-immunity .photograph--show .photograph__description {
+		width:90%;
+	}
+}
+.photograph--show--black {
+	display: none;//hide blue svg
+}
+.photograph, .photograph--mobile, .header--mobile {
+	background-color: $inf-im-blue;
+	border-bottom-color: $inf-im-blue;
+}

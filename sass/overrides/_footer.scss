@@ -1,0 +1,10 @@
+.footer {
+	div {
+		.p {
+			margin-bottom: 0;
+			+ .heading {
+				margin-top: 1.5em;
+			}
+		}
+	}
+}

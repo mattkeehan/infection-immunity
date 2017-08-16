@@ -1,0 +1,9 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+	.photograph--show--black {
+		display: inherit !important; //show black svg
+	}
+	.photograph--show--blue {
+		display: none;//hide blue svg
+	}
+}

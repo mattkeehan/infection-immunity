@@ -1,0 +1,63 @@
+.accordion {
+	.accordion__title {
+		background-color: $inf-im-blue;
+		&:last-of-type {
+			border-color: white;
+		}
+	}
+	.accordion__description, .accordion__title {
+		padding: 0.5rem;
+	}
+	.accordion__description {
+		padding-left:0;
+		&:last-of-type {
+			border-bottom-color: white;
+		}
+	}
+
+	table {
+		@include gs-media(t, min) { //min width 768px - "tablet"
+			table-layout: fixed;
+			col:nth-of-type(1), td:nth-of-type(1) {
+				width: 20% !important;
+			}
+			col:nth-of-type(2), td:nth-of-type(2) {
+				width: 50% !important;
+			}
+			col:nth-of-type(3), td:nth-of-type(3) {
+				width: 20% !important;
+				text-align: right;
+			}
+			col:nth-of-type(4), td:nth-of-type(4) {
+				width: 10% !important;
+				text-align: right;
+				background-position: right 1.5rem top 1rem;
+			}
+		}
+		col:nth-of-type(4), td:nth-of-type(4) {
+			background-image: url(http://cdn.ucl.ac.uk/skins/UCLIndigoSkin/infection-immunity-theme/icons/icon-magnify.png);
+			background-repeat: no-repeat;
+			background-size: 1.5rem;
+			padding-right: 3.5rem;
+		}
+		td:nth-of-type(1) {
+			font-weight: 900;
+		}
+		@include gs-media(m, max) { //min width 768px - "tablet"
+			col:nth-of-type(4), td:nth-of-type(4) {
+				background-position: 3rem center;
+			}
+			td {
+				display: block;
+				border-bottom: none;
+				padding:0;
+				&:last-of-type {
+					border-bottom: 1px solid;
+				}
+			}
+			tr:last-of-type td:last-of-type {
+				border-bottom: none;
+			}
+		}
+	}
+}

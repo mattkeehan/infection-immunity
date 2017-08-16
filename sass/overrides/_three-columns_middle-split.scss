@@ -1,0 +1,71 @@
+.threecolumns, .middle-split {
+	> section {
+		border-top: none;
+		h1.heading, h2.heading {
+			//background-color: unset;
+			//color: white;
+			padding:6px;
+			margin-bottom:0;
+			font-size: 3rem;
+			+ p, +.heading {
+				margin-top:0.33rem;
+			}
+			border-top: 5px solid black;
+		}
+		h2.heading {
+			padding-left:0;
+			a {
+				color: $inf-im-blue;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		h3.heading {
+			background-color: $inf-im-blue;
+			padding:6px;
+			font-size: 1em;
+			font-weight:300;
+			margin-bottom:3px;
+			color: white;
+			font-weight: 700;
+			a {
+				color: white;
+			}
+		}
+		h4.heading {
+			margin-bottom: 0;
+			+ ul {
+				margin-top:0.5em;
+			}
+		}
+		img {
+			margin-bottom: 0;
+		}
+		> .pull-quote__wrap {
+			margin-top: 0;
+		}
+		.p+.disc {
+			margin-top: 0em;
+		}
+	}
+	@include gs-media(dc) {
+		> section [ class *= "top-content-" ] {
+			height: 150px;
+			ul {
+				margin-bottom:0.5em;
+			}
+		}
+	}
+	margin-bottom: 6rem;
+	.rule {
+		margin:0;
+		border-color: $inf-im-grey;
+	}
+	.p {
+		margin-bottom:1em;
+	}
+}
+#infection-immunity .threecolumns >section .p {
+	margin-bottom: 0;
+}

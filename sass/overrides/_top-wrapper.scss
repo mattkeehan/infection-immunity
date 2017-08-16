@@ -1,0 +1,10 @@
+/* hide top banner in sub pages */
+#infection-immunity-about, #infection-immunity-about-alumni, #infection-immunity-about-work-with-us {
+	.photograph.photograph--show.photograph--show--blue {
+		padding-bottom: 10.5%;
+		background-color: $inf-im-lighter-blue;
+		.photograph__description {
+			display: none;
+		}
+	}
+}

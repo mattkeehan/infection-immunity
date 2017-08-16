@@ -1,0 +1,16 @@
+tr {
+	&.even {
+		td {
+			background-color: transparent;
+		}
+	}
+	td {
+		padding-left: 0;
+	}
+}
+tr:last-of-type td {
+	border-bottom: none;
+}
+table {
+	font-size: 1em;
+}

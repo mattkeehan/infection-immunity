@@ -1,0 +1,60 @@
+#infection-immunity {
+	.threecolumns:last-of-type {
+		.threecolumns__column3 {
+			h3 {
+				background-image: url(http://cdn.ucl.ac.uk/skins/UCLIndigoSkin/infection-immunity-theme/icons/icon-info.png);
+				background-position: 1rem center;
+				background-repeat: no-repeat;
+				background-size: 6%;
+				&:nth-of-type(2) {
+					background-image: url(http://cdn.ucl.ac.uk/skins/UCLIndigoSkin/infection-immunity-theme/icons/icon-book.png);
+				}
+				&:nth-of-type(3) {
+					background-image: url(http://cdn.ucl.ac.uk/skins/UCLIndigoSkin/infection-immunity-theme/icons/icon-staff.png);
+				}
+				&:nth-of-type(4) {
+					background-image: url(http://cdn.ucl.ac.uk/skins/UCLIndigoSkin/infection-immunity-theme/icons/icon-hr.png);
+				}
+				a {
+					padding-left: 4.5rem;
+				}
+			}
+			@include gs-media(t, max) { //min width 768px - "tablet"
+				h3 {
+					background-size: 2%;
+				}
+			}
+			@include gs-media(m, max) { //min width 768px - "mobile"
+				h3 {
+					background-size: 3%;
+				}
+			}
+		}
+	}
+}
+
+#infection-immunity-intranet {
+	.threecolumns{
+		h1 {
+			background-image: url(http://cdn.ucl.ac.uk/skins/UCLIndigoSkin/infection-immunity-theme/icons/icon-info.png);
+			background-position: 1rem center;
+			background-repeat: no-repeat;
+			background-size: 9%;
+			padding-left: 5rem;
+		}
+		.threecolumns__column2 h1 {
+			background-image: url(http://cdn.ucl.ac.uk/skins/UCLIndigoSkin/infection-immunity-theme/icons/icon-book.png);
+			background-size: 12%;
+			padding-left: 6rem;
+		}
+		.threecolumns__column3 h1 {
+			background-image: url(http://cdn.ucl.ac.uk/skins/UCLIndigoSkin/infection-immunity-theme/icons/icon-staff.png);
+		}
+		&:last-of-type {
+			.threecolumns__column1 h1 {
+				background-image: url(http://cdn.ucl.ac.uk/skins/UCLIndigoSkin/infection-immunity-theme/icons/icon-hr.png);
+			}
+		}
+	}
+
+}
